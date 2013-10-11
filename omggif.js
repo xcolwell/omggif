@@ -490,13 +490,14 @@ function GifReader(buf) {
   }
 
   this.opts = function() {
-    // TODO global palette
     return {
       loop: loop_count,
-      //  palette: global palette
+      //  TODO palette: global palette
       background: background
     };
   }
+
+  // TODO get palette per frame
 
   this.numFrames = function() {
     return frames.length;
